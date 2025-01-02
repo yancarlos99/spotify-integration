@@ -24,8 +24,8 @@ public class AlbumController {
     @GetMapping("/albums")
     public ResponseEntity<List<Album>> getAlbums(){
         LoginRequest request = LoginRequest.builder()
-                .clientId("61ea62c6f2084533a61f47d233331a08")
-                .clientSecret("016965e61cef471a8a8b61c457eae7b8")
+                .clientId("clientId")
+                .clientSecret("clientSecret")
                 .grantType("client_credentials")
                 .build();
 
